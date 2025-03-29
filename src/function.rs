@@ -154,7 +154,6 @@ macro_rules! impl_fn {
         impl_fn!(@impl_u_and_s ($($nm : $ty),*) ("fastcall") fn($($ty),*) -> Ret);
         impl_fn!(@impl_u_and_s ($($nm : $ty),*) ("win64")    fn($($ty),*) -> Ret);
         impl_fn!(@impl_u_and_s ($($nm : $ty),*) ("sysv64")   fn($($ty),*) -> Ret);
-        impl_fn!(@impl_u_and_s ($($nm : $ty),*) ("aapcs")    fn($($ty),*) -> Ret);
         impl_fn!(@impl_u_and_s ($($nm : $ty),*) ("C")        fn($($ty),*) -> Ret);
         impl_fn!(@impl_u_and_s ($($nm : $ty),*) ("system")   fn($($ty),*) -> Ret);
     };
